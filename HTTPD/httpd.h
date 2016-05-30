@@ -14,9 +14,11 @@
 #include<ctype.h>
 #include<assert.h>
 #include<fcntl.h>
+#include<sys/epoll.h>
+
 
 #define _BACK_LOG_ 5
 #define _BLOCK_SIZE_ 2048
 #define MAIN_PAGE "index.html"
 #define HTTP_VERSION "HTTP/1.1"
-
+#define _MAX_NUM_ 64

@@ -1,12 +1,13 @@
 ROOT_PATH = $(shell pwd)
 
 SERVER_BIN = httpd
-SERVER_SRC = httpd.c
+SERVER_SRC = httpd1.c
 CGI_PATH = $(ROOT_PATH)/cgi_bin
 
 CC = gcc
 FLAGS = -D_DEBUG_ 
-LDFLAGS = -lpthread
+#LDFLAGS = -lpthread
+LDFLAGS = 
 
 .PHONY:all
 all:$(SERVER_BIN) $(CLIENT_BIN) cgi
